@@ -1,0 +1,45 @@
+.container-pelicula{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.movie{
+    margin: 5px;
+}
+h1{
+    text-align: center;
+    color: rgb(200, 28, 28);
+    font-size: 25px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.buscar{
+    border-radius: 7px 0 0 7px;
+    outline: none;
+    padding: 3px;
+    border-right: none;
+}
+
+
+.btn{
+    border: 1px solid black;
+    border-radius: 0 7px 7px 0 ;
+    color: black;
+    border-left: none;
+
+}
+.btn:hover{
+    border: 1px solid black;
+    background-color: blue;
+    color: white;
+}
+@media (max-width: 600px){
+    .container-pelicula{
+        display: flex;
+        flex-direction: column;
+    }
+}
