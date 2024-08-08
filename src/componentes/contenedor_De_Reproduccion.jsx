@@ -4,14 +4,14 @@ import { dataContent } from "./dataConten/dataConten"
 import YouTube from "react-youtube"
 import "../estilosCss/contenedorReproduccion.css"
 
-export default function Contenedor_De_Reproduccion() {
-    const image_Path=URL_Image
+export default function ContenedorReproduccion() {
+    const Image_Path=URL_Image
     const {movie,playing,trailer,setPlaying}=useContext(dataContent)
   return (
     <>
       <main>
         {movie? (
-        <div className="viwtrailer" style={{backgroundImage:`Url("${image_Path}/${movie.backdrop_path}")`}}>
+        <div className="viwtrailer" style={{backgroundImage:`Url("${Image_Path}/${movie.backdrop_path}")`}}>
          {playing?(
           <>
           <YouTube 

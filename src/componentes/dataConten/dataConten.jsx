@@ -1,9 +1,9 @@
 import { createContext } from "react";
-import { URL_pelicula } from "../URL_pelicula";
+import { URL_Pelicula } from "../URL_pelicula";
 import axios from "axios";
 import { useState } from "react";
 
-const Api_URL=URL_pelicula
+const Api_URL=URL_Pelicula
 const Api_key="4f5f43495afcc67e9553f6c684a82f84"
 
 export const dataContent = createContext();
@@ -58,6 +58,6 @@ const DataProvider=({children})=>{
     window.scrollTo(0,0)
  }
  
- return <dataContent.Provider value={{movies,setMovies,searchKey,setSearchKey,fechMovies,buscarMovie,movie,seletMovie,playing,trailer,setPlaying,seletMovie}}>{children}</dataContent.Provider>
+ return <dataContent.Provider value={{movies,setMovies,searchKey,setSearchKey,fechMovies,buscarMovie,movie,seletMovie,playing,trailer,setPlaying}}>{children}</dataContent.Provider>
 }
 export default DataProvider;
