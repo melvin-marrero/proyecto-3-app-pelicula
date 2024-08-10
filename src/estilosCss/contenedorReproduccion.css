@@ -18,7 +18,8 @@ p{
     font-weight: bold;
 }
 .btn-repro{
-    padding: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
     border-radius: 5px;
     background-color: blue;
     color: white;
